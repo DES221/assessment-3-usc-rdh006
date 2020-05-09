@@ -1,1 +1,14 @@
 
+/* 
+#8D5741 - green
+#659DBD - blue
+#DAAD86 - beige
+#BC986A - brown
+#FBEEC1 - khaki
+*/
+body{
+    background-color: #659DBD;
+}
+h1{
+    font-size: 12px;
+}
