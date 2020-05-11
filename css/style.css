@@ -5,10 +5,197 @@
 #DAAD86 - beige
 #BC986A - brown
 #FBEEC1 - khaki
+#fec107 - orange
 */
 body{
     background-color: #659DBD;
 }
+.sale_ad{
+    text-align: center;
+}
+
+.button1 {
+    color:#fff;
+    background:transparent;
+    font-size: 26px;
+    border-width:2px;
+    border-style: solid;
+    border-color: #fff;
+    position:relative;
+    margin:1em;
+    display:inline-block;
+    padding:0.5em 1em;
+    transition:all 0.3s ease-in-out;
+    text-align:center;
+    font-family:comfortaa;
+    font-weight:bold
+}
+    .button1:before, .button1:after {
+        content:'';
+        display:block;
+        position:absolute;
+        border-color:#fec107;
+        box-sizing:border-box;
+        border-style:solid;
+        width:1em;
+        height:1em;
+        transition:all 0.3s ease-in-out
+    }
+
+    .button1:before {
+        top:-6px;
+        left:-6px;
+        border-width:2px 0 0 2px;
+        z-index:5;
+    }
+    
+    .button1:after {
+        bottom:-6px;
+        right:-6px;
+        border-width:0 2px 2px 0;
+    }
+
+    .button1:hover:before, .button1:hover:after {
+        width:calc(100% + 12px);
+        height:calc(100% + 12px);
+        border-color:#fff
+    }
+
+    .button1:hover {
+        color:#659DBD;
+        background-color:#fff;
+        border-color:#fff
+    }
+
+   
+
+        
+
+
 h1{
     font-size: 12px;
 }
+a{
+    text-decoration: none;
+    color: #fec107;
+  }
+  li{
+    font-size: 28px;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  
+  .wrap {
+    width: 1200px;
+    margin: 0 auto;
+   
+  }
+  
+  section.nav-section {
+    margin-bottom: 150px;
+    display: flex;
+  }
+  
+  img.logo {
+    max-width: 400px;
+    height: auto;
+  }
+  
+  
+  
+  #nav-1 .nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10%;
+    
+    
+  }
+  #nav-1 li{
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: flex-end;
+    padding: 10px;
+    flex-wrap: nowrap;
+    
+    
+  }
+  #nav-1 .logo{
+   padding-right: 10px;
+   align-self: flex-end;
+   margin-left: -12%;
+   
+  
+  }
+  #nav-1 .home{
+    align-self: flex-start;
+    padding-top: 50px;
+    
+  }
+  #nav-1 .order{
+    align-self: flex-start;
+    padding-top: 50px;
+  }
+  #nav-1 .custom{
+    align-self: flex-start;
+    padding-top: 50px;
+  }
+  #nav-1 .about{
+    align-self: flex-start;
+    padding-top: 50px;
+  }
+  
+  #nav-1 .social{
+    align-self: flex-start;
+    padding-top: 50px;
+    padding-left: 200px;
+  }
+  
+/* Search bar */
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap_bar{
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ 
