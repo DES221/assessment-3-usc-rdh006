@@ -2,7 +2,7 @@
 /* 
 
 Color Scheme:
-#8D5741 - green
+#8D8741 - green
 #659DBD - blue
 #DAAD86 - beige
 #BC986A - brown
@@ -30,7 +30,10 @@ Breakpoints:
   font-family: inkfree;
   src: url(../font/Inkfree.ttf);
 }
-
+body{
+  background-color: #659DBD;
+  overflow-x: hidden;
+}
 .photobanner {
   height: 233px;
   width: 3550px;
@@ -251,10 +254,7 @@ display: none;
   margin-left: -20px;
   margin-top: -25%;
 }
-body{
-    background-color: #659DBD;
-    overflow-x: hidden;
-}
+
 @media screen and (min-width: 401px){
 .sale_ad{
     text-align: center;
@@ -656,4 +656,195 @@ a{
     transform: translate(-50%, -50%);
   }
 }
- 
+/* finance options banner */
+.finance_banner{
+  text-align: center;
+  margin-top: 500px;
+  margin-bottom: -200px;
+}
+@media screen and (max-width: 400px){
+.finance_banner{
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: -50px;
+}
+}
+
+/* footer */
+h3{
+  font-family: inkfree;
+
+}
+
+.fabrications_footer{
+	background: #BC986A;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 200px;
+}
+@media screen and (max-width: 400px){
+.fabrications_footer{
+	background: #BC986A;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 70px;
+}
+}
+.fabrications_footer .fabrications_footer_main,
+.fabrications_footer .fabrications_footer_contact,
+.fabrications_footer .fabrications_footer_vision{
+	display: inline-block;
+	vertical-align: top;
+}
+.fabrications_footer .fabrications_footer_main{
+	width: 40%;
+}
+.fabrications_footer h3{
+	color:  #fff;
+  font: inkfree;
+  font-size: 26px;
+	margin: 0;
+}
+.fabrications_footer .footer_link{
+	color:  #fff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.fabrications_footer .footer_link a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.fabrications_footer .footer_copyright{
+	color:  #fff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.fabrications_footer .fabrications_footer_contact{
+	width: 35%;
+}
+.fabrications_footer .fabrications_footer_contact i{
+	background-color:  #fff;
+	color: #8D8741;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.fabrications_footer .fabrications_footer_contact i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+@media screen and (max-width: 400px){
+.fabrications_footer .fabrications_footer_contact i.fa-phone{
+	margin-left: -50px;
+}
+}
+@media screen and (max-width: 400px){
+  .fabrications_footer .fabrications_footer_contact i.fa-envelope{
+    margin-left: -7px;
+  }
+  }
+
+.fabrications_footer .fabrications_footer_contact p{
+	display: inline-block;
+	color: #fff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.fabrications_footer .fabrications_footer_contact p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.fabrications_footer .fabrications_footer_contact p a{
+	color:  #fff;
+	text-decoration: none;;
+}
+.fabrications_footer .footer_link a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+.fabrications_footer .footer_link .home_link:before {
+  content: none;
+}
+.fabrications_footer .footer_link .attribution_link:before {
+  content: none;
+}
+.fabrications_footer .fabrications_footer_vision{
+	width: 20%;
+}
+.fabrications_footer .footer_vision_mission{
+	line-height: 20px;
+	color:  #fff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.fabrications_footer .footer_vision_mission span{
+	display: block;
+	color:  #fff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.fabrications_footer .footer_social_icons{
+	margin-top: 25px;
+}
+.fabrications_footer .footer_social_icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fff;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #8D8741;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+@media screen and (max-width: 400px) {
+
+	.fabrications_footer{
+		font: bold 14px sans-serif;
+	}
+
+	.fabrications_footer .fabrications_footer_main,
+	.fabrications_footer .fabrications_footer_contact,
+	.fabrications_footer .fabrications_footer_vision{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.fabrications_footer .fabrications_footer_contact i{
+		margin-left: 0;
+	}
+
+}
+/*end footer jesus h christ*/
