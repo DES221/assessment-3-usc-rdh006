@@ -848,3 +848,97 @@ h3{
 
 }
 /*end footer jesus h christ*/
+
+/*Order page (shop)*/
+.shop {
+	margin: 0 auto;
+	padding-left:12px;
+	padding-right:12px;
+}
+
+  .shop_col {
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 10%;
+    
+  }
+  
+
+
+@media (min-width: 1200px) {
+	.shop {
+		width: 1170px;
+	}
+	
+
+}
+@media (max-width: 400px) {
+	.shop {
+    width: 370px;
+    
+	}
+	
+
+}
+@media (max-width: 400px){
+.shop_col {
+  width: 75%;
+  margin-top: 5%;
+}
+
+}
+
+.image_gallery {
+  display: flex;
+  flex-flow: column wrap;
+  height: 600px;
+  margin: 0 auto;
+
+}
+.image_gallery section {
+  display: none;
+  margin-left: 20px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.image_gallery section img {
+  height: auto;
+  width: 100%;
+  max-width:720px;
+}
+
+.image_gallery input {
+display: none;
+}
+
+.image_gallery label {
+  border: 2px solid #fec107;
+  margin: 0 0 10px;
+  padding: 5px;
+  text-align: center;
+  width: 20%;
+}
+.image_gallery label:hover {
+cursor: pointer;
+}
+
+.image_gallery label img {
+  height: auto;
+  width: 100%;
+}
+.image_gallery input:checked + label {
+border: 2px solid #fff;
+padding: 5px;
+}
+
+
+.image_gallery #tab1:checked ~ #content1,
+.image_gallery #tab2:checked ~ #content2,
+.image_gallery #tab3:checked ~ #content3,
+.image_gallery #tab4:checked ~ #content4,
+.image_gallery #tab5:checked ~ #content5,
+.image_gallery #tab6:checked ~ #content6 {
+display: block;
+}
+
