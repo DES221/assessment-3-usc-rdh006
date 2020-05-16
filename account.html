@@ -3,10 +3,10 @@
 <html lang="en">
 
 	<head>
-		<title>Fabrications &copy;</title>
+		<title>Fabricated Furniture &copy;</title>
 		<meta charset="UTF-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="Fabrications Online Shopfront" content="Furniture, Custom, Antique, Home Decor, CNC, 3D Printed">
+		<meta name="Fabricated Furniture Online Shopfront" content="Furniture, Custom, Antique, Home Decor, CNC, 3D Printed">
     <!-- STYLESHEETS  -->
 		
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -75,32 +75,149 @@
 					  </ul>
 					</div>
 				  </section>
-
 				
-			</div>
-			 <!--The search bar--> 
-			 <div class="wrap_bar">
-				<div class="search">
-				   <input type="text" class="searchTerm" placeholder="Search Products">
-				   
-				   <button type="submit" class="searchButton">
-					 <i class="fa fa-search"></i>
-				  </button>
+				<div class="account_img_top">
+				  <i class="fas fa-users"style="font-size:100px; color:#fec107; padding: 5px;"></i>
+				</div>
+				<div>
+				<h1 class="account_blurb">Already Registered </br> With Us?</h1>
 				</div>
 			</div>
+			<!--Taken from W3Schools.com - account / login -->
+			<button class="login_button" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+			<!--Taken from W3Schools.com - account / login -->
+				<div id="id01" class="modal">
+  				<span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">&times;</span>
+
+  			<!--Taken from W3Schools.com - account / login -->
+  				<form class="modal-content animate" action="/action_page.php">
+   			 	<div class="imgcontainer">
+     		 	
+    			</div>
+			<!--Taken from W3Schools.com - account / login -->
+    			<div class="container_account">
+     		 	<label for="uname"><b>Username</b></label>
+     		 	<input class="input2" type="text" placeholder="Enter Username" name="uname" required>
+
+     		 	<label for="psw"><b>Password</b></label>
+     		 	<input class="input2" type="password" placeholder="Enter Password" name="psw" required>
+
+     		 	<button class="buttonstyle_submit" type="submit">Login</button>
+      			<label>
+       		 	<input class="input2" type="checkbox" checked="checked" name="remember"> Remember me
+     			 </label>
+   				 </div>
+
+   	 			<div class="container_account" style="background-color:#659DBD">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      			<span class="psw"></br>Forgot <a href="#">password?</a></span>
+    			</div>
+ 				</form>
+				</div> 
+
+			<!--Taken from W3Schools.com - account / login -->
+				<form action="/action_page.php" style="margin-bottom: -20%;">
+				<div class="container_account">
+				  <h1 >Create Account</h1>
+				  <p>Please enter your details to register for an account</p>
+				  <hr>
+			  
+				  <label for="email"><b>Email Address (will be your account name)</b></label>
+				  <input class="input2" type="text" placeholder="Enter Email" name="email" required>
+			  
+				  <label for="psw"><b>Password</b></label>
+				  <input class="input2" type="password" placeholder="Enter Password" name="psw" required>
+			  
+				  <label for="psw-repeat"><b>Repeat Password</b></label>
+				  <input class="input2" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				  
+				  <label>
+					<input class="input2" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				  </label>
+				  
+				  <p>By creating an account you agree to our</br> <a href="../assessment-3-usc-rdh006/about.html" style="color:#fec107">Terms & Privacy</a>.</p>
+			  
+				  <div class="clearfix">
+					
+					<button type="submit" class="button_account">Sign Up</button>
+				  </div>
+				</div>
+			  </form>
+			  
+			  </body>
+			  </html>
 
 
-			
-
-
-			<div class="sale_ad">
+			  <div class="finance_banner">
 				<picture>
-					<source media="(max-width: 400px)" srcset="../assessment-3-usc-rdh006/images/sale_banner_main_mobile.jpg">
-					<img src="../assessment-3-usc-rdh006/images/sale_banner_main.jpg" alt="may day sale">
+					<source media="(max-width: 400px)" srcset="../assessment-3-usc-rdh006/images/finance_options_banner_mobile.jpg">
+					<img src="../assessment-3-usc-rdh006/images/finance_options_banner.jpg" alt="afterpay">
 				</picture>
 			</div>
-		</main>
 
+		</main>
+		<footer class="fabrications_footer">
+
+			<div class="fabrications_footer_main">
+
+				<h3>Fabricated Furniture & Design &copy;</h3>
+
+				<p class="footer_link">
+					<a href="../assessment-3-usc-rdh006/index.html" class="home_link">Home</a>
+														
+					<a href="../assessment-3-usc-rdh006/about.html">About</a>
+					
+					<a href="../assessment-3-usc-rdh006/custom.html">Contact</a>
+				
+				</br><a href="../assessment-3-usc-rdh006/attribution.html" class="attribution_link">Attribution</a>
+
+					<a href="../assessment-3-usc-rdh006/styleguide.html">Style-Guide</a>
+				</p>
+
+				<p class="footer_copyright">Ryan Hansen © 2020</p>
+			</div>
+
+			<div class="fabrications_footer_contact">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>98 Avenue-Lane Street</span> Launceston, Tasmania</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+61 5477 1234</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:kylie@fabrications.org">kylie@fabrications.org</a></p>
+				</div>
+
+			</div>
+
+			<div class="fabrications_footer_vision">
+
+				<p class="footer_vision_mission">
+					<span>Vision & MIssion</span>
+					To reduce environmental impacts of traditional methods of carpentry and 3D printing - 
+					we hope to be the premier furniture & design business in Australia specialising in creations using 
+					reclaimed wood products and environmentally friendly plastics.
+				</p>
+
+				<div class="footer_social_icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.pinterest.com.au/"><i class="fa fa-pinterest"></i></a>
+					
+
+				</div>
+
+			</div>
+
+		</footer>
 
 		<script src="critical-scripts.js"></script>
 	</body>

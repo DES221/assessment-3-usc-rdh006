@@ -2,18 +2,23 @@
 /* 
 
 Color Scheme:
-#8D8741 - green
-#659DBD - blue
-#DAAD86 - beige
-#BC986A - brown
-#FBEEC1 - khaki
-#fec107 - orange
+#8D8741 - green - footer icons
+#659DBD - blue - background
+#DAAD86 - beige - 
+#BC986A - brown - footer
+#FBEEC1 - khaki - 
+#fec107 - orange - highlights - text
+#fff - text
 
 Breakpoints:
 @media screen and ( max-width: 1920px )
 @media screen and ( max-width: 400px )
 
-*/
+
+/*top right bottom left*/
+
+
+/*---------------------------------------------------------------FONTS---------------------------------------------------------------------------------------*/
 @font-face {
   font-family: branboll;
   src: url(../font/BrannbollFet.ttf);
@@ -30,10 +35,18 @@ Breakpoints:
   font-family: inkfree;
   src: url(../font/Inkfree.ttf);
 }
+/*---------------------------------------------------------------END FONTS---------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------BODY _ ALL PAGES _ NO OVERFLOW (X AXIS)---------------------------------------------------------*/
+
 body{
   background-color: #659DBD;
   overflow-x: hidden;
 }
+
+/*---------------------------------------------------------------BODY _ ALL PAGES _ NO OVERFLOW (X AXIS)---------------------------------------------------------*/
+
+/*----------------------------------------------------SCROLLING PHOTO BANNER - INDEX 'popular this month---------------------------------------------------------*/
 .photobanner {
   height: 233px;
   width: 3550px;
@@ -129,7 +142,8 @@ body{
        -o-animation: bannermove 30s linear infinite;
           animation: bannermove 30s linear infinite;
  }
-  
+/*---------------------------------------------------------------PHOTOBANNER KEYFRAMES ANIMATION---------------------------------------------------------*/
+/*------------------------------------------------------------------Works in Spite of Errors-------------------------------------------------------------*/
  @keyframes "bannermove" {
   0% {
      margin-left: 0px;
@@ -237,6 +251,13 @@ body{
   }
   
  }
+/*---------------------------------------------------------------END PHOTOBANNER KEYFRAMES ANIMATION---------------------------------------------------------*/
+/*------------------------------------------------------------------------ END PHOTOBANNER ------------------------------------------------------------------*/
+
+
+
+ /*---------------------------------------------------------------LOGO---------------------------------------------------------*/
+ /*----------------------------No display on large logo for desktop / No display on small logo for mobile----------------------*/
 
 @media screen and (min-width: 401px){
 .mobile_logo{
@@ -255,6 +276,10 @@ display: none;
   margin-top: -25%;
 }
 
+/*---------------------------------------------------------------END LOGO---------------------------------------------------------*/
+
+/*---------------------------------------------------------------SALE ADVERTISEMENT-----------------------------------------------*/
+
 @media screen and (min-width: 401px){
 .sale_ad{
     text-align: center;
@@ -268,6 +293,9 @@ display: none;
   
 }
 }
+/*---------------------------------------------------------------END SALE ADVERTISEMENT--------------------------------------------*/
+
+/*---------------------------------------------------------------CATEGORY BUTTONS--------------------------------------------------*/
 .category{
   border: none;
   font-size: 0px;
@@ -318,6 +346,33 @@ display: none;
   box-shadow: 0px 15px 20px #fec107;
   color: #fff;
   transform: translateY(-7px);
+}
+
+/*---------------------------------------------------------------END CATEGORY BUTTONS-----------------------------------------------*/
+
+
+/*---------------------------------------------------------------START ORDER PAGE-----------------------------------------------*/
+
+/*Floating Prefabricated Button*/
+.category_order{
+  border: none;
+  font-size: 0px;
+  height: 50%;
+  background-color: #659DBD;
+  margin-left: 36.25%;
+  margin-top: 5%;
+
+}
+@media screen and (max-width: 400px){
+.category_order{
+  border: none;
+  font-size: 0px;
+  height: 50%;
+  background-color: #659DBD;
+  margin-left: 28%;
+  margin-top: 5%;
+
+}
 }
 
 .button1 {
@@ -474,6 +529,9 @@ a{
     text-decoration: none;
     color: #fec107;
   }
+
+
+/*---------------------------------------------------------------NAV BAR-----------------------------------------------*/
   li{
     font-size: 28px;
     text-transform: uppercase;
@@ -593,13 +651,16 @@ a{
     margin-right: -5px;
     
   }
+
   
-/* Search bar */
+/*---------------------------------------------------------------END NAV BAR-----------------------------------------------*/
+
+/*---------------------------------------------------------------SEARCH BAR-----------------------------------------------*/
 .search {
     width: 100%;
-    position: relative;
+    position: absolute;
     display: flex;
-    margin-top: -75px;
+    margin-top: -90px;
   }
 @media screen and (max-width: 400px){
   .search {
@@ -656,6 +717,10 @@ a{
     transform: translate(-50%, -50%);
   }
 }
+/*---------------------------------------------------------------END SEARCH BAR-----------------------------------------------*/
+
+/*---------------------------------------------------------------FINANCE OPTIONS BANNER----------------------------------------*/
+
 /* finance options banner */
 .finance_banner{
   text-align: center;
@@ -669,8 +734,23 @@ a{
   margin-bottom: -50px;
 }
 }
+.finance_banner_cart{
+  text-align: center;
+  
+  margin-bottom: -200px;
+}
+@media screen and (max-width: 400px){
+.finance_banner_cart{
+  text-align: center;
+  
+  margin-bottom: -50px;
+}
+}
 
-/* footer */
+/*---------------------------------------------------------------END FINANCE OPTIONS BANNER----------------------------------------*/
+
+/*------------------------------------------------------------------------FOOTER---------------------------------------------------*/
+
 h3{
   font-family: inkfree;
 
@@ -847,9 +927,10 @@ h3{
 	}
 
 }
-/*end footer jesus h christ*/
-/*top right bottom left*/
-/*Order page (shop)*/
+/*------------------------------------------------------------------------END FOOTER---------------------------------------------------*/
+
+
+/*---------------------------------------------------------------START ORDER PAGE-----------------------------------------------------------------------------------*/
 .shop {
 	margin: 0 auto;
 	padding-left:12px;
@@ -929,7 +1010,7 @@ display: none;
 }
 
 .image_gallery label {
-  border: 2px solid #fec107;
+  border: 2px solid #DAAD86;
   margin: 0 0 10px;
   padding: 5px;
   text-align: center;
@@ -964,3 +1045,413 @@ padding: 5px;
 display: block;
 }
 
+/*---------------------------------------------------------------END ORDER PAGE---------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------------------START ACCOUNT PAGE-----------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------Taken from W3Schools.com - account / login-----------------------------------------------------------*/
+.account_blurb{
+  font-family: goudy-stout;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 4%;
+  margin-top: -4%;
+}
+
+.account_img_top{
+  text-align: center;
+  margin-top: -8%;
+  margin-bottom: 10%;
+}
+
+
+ .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 200px;
+}
+
+
+.modal-content {
+  background-color: #659DBD;
+  margin: 5px auto;
+  border: 2px solid #fff;
+  width: 80%; 
+  
+}
+@media screen and (min-width: 1200px){
+.modal-content {
+  background-color: #659DBD;
+  margin: 5px auto; 
+  border: 2px solid #fff;
+  width: 33%; 
+  
+}
+}
+
+
+.close {
+ 
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  cursor: pointer;
+  width: 75%;
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+} 
+
+.login_button{
+  width:25%;
+  height: 50px;
+  margin-left: 37%;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  background-color: #fec107;
+  font-size: 26px;
+  font-family: inkfree;
+  font-weight: 800;
+  color: white;
+
+}
+.login_button:hover{
+  
+    background-color: #fec107;
+    box-shadow: 0px 15px 20px #fec107;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------Taken from W3Schools.com - account / login-----------------------------------------------------------*/
+
+.input2[type=text], .input2[type=password] {
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #DAAD86;
+}
+@media screen and (max-width: 400px){
+.input2[type=text], .input2[type=password] {
+  width: 85%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #DAAD86;
+}
+}
+
+.input2[type=text]:focus, .input2[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  
+}
+
+
+.button_account {
+  background-color: #fec107;
+  color: #659DBD;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.9;
+  font-size: 26px;
+  font-family: inkfree;
+  font-weight: 800;
+  color: white;
+  border-radius: 5px;
+}
+@media screen and (max-width: 400px){
+.button_account {
+  background-color: #fec107;
+  color: #659DBD;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  font-size: 26px;
+  font-family: inkfree;
+  font-weight: 800;
+  color: white;
+  border-radius: 5px;
+}
+}
+
+.button_account:hover {
+  opacity:1;
+}
+
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #fec107;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.button_account:hover{
+  
+  background-color: #fec107;
+  box-shadow: 0px 15px 20px #fec107;
+  transform: translateY(-7px);
+}
+
+@media screen and (min-width: 1200px){
+.container_account {
+  padding: 16px;
+  font-family: inkfree;
+  color: #fff;
+  width: 75%;
+  margin-left: 12.5%
+}
+}
+@media screen and (max-width: 400px){
+.container_account {
+  padding: 16px;
+  font-family: inkfree;
+  color: #fff;
+}
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+/*---------------------------------------------------------------END ACCOUNT PAGE-----------------------------------------------------------------------------------*/
+
+
+/*------------------------------------CHECK OUT CART - taken from w3schools 'responsive checkout form----------------------------------------------------------------*/
+.checkout_text{
+  text-align: center;
+  font-family: goudy-stout;
+  color: #fff;
+}
+
+.checkout_cart{
+  text-align: center;
+  margin-top: -8%;
+  margin-bottom: 6%;
+}
+@media screen and (max-width: 400px){
+.checkout_cart{
+  text-align: center;
+  margin-top: -8%;
+  margin-bottom: 6%;
+  margin-left: -4%;
+}
+}
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  width: 50%;
+  margin-left: 25%;
+  flex-direction: column-reverse;
+}
+@media screen and (max-width: 400px){
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  width: 90%;
+  margin-left: 3.5%;
+  
+}
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+  
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+  }
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #659DBD;
+  padding: 5px 20px 15px 20px;
+  margin-left: -5%;
+  
+ 
+  
+}
+@media screen and (max-width: 400px){
+.container {
+  background-color: #659DBD;
+  padding: 5px 20px 15px 20px;
+  
+  
+ 
+}
+}
+
+.input3[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #BC986A;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-family: inkfree;
+  color: #fff;
+  font-weight: 800;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #fec107;
+  color: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 26px;
+  font-family: inkfree;
+  font-weight: 800;
+}
+
+
+.btn:hover{
+  
+  background-color: #fec107;
+  box-shadow: 0px 15px 20px #fec107;
+  transform: translateY(-7px);
+}
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: white;
+  font-family: inkfree;
+}
+
+
+@media (max-width: 800px) {
+  
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .col-25 .container{
+    margin-left: 5% ;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+.col-25 .container{
+  width: 40%;
+  margin-left: 28%;
+}
+}
+
+
+/*------------------------------------END CHECK OUT CART - taken from w3schools 'responsive checkout form----------------------------------------------------------------*/
