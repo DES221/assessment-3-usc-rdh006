@@ -78,15 +78,19 @@
 				  				
 			</div>
 			 <!--The search bar--> 
+			 <form autocomplete="off" action="/action_page.php"></form>
 			 <div class="wrap_bar">
+				
 				<div class="search">
-				   <input type="text" class="searchTerm" placeholder="Search Products">
-				   
-				   <button type="submit" class="searchButton">
-					 <i class="fa fa-search"></i>
-				  </button>
+					<div class="autocomplete" style="width:inherit;">
+						<input id= 'myInput' type="text" class="searchTerm" placeholder="Search for product or category">
+						
 				</div>
 			</div>
+			</div>
+		</form>
+			
+
 			<div class="sale_ad">
 				<picture>
 					<source media="(max-width: 400px)" srcset="../assessment-3-usc-rdh006/images/sale_banner_main_mobile.jpg">
@@ -138,7 +142,35 @@
 					<a href="../assessment-3-usc-rdh006/custom.html"><button class="category"><img src="../assessment-3-usc-rdh006/images/custom_wood_button.jpg" class="round_category_button"></button></a>
 
 			</div>
-
+			<div class="wrapper_blurb">
+				<div class="order_card item">
+				  
+				  <div class="order_card__top order_card__top--item"></br>we offer our customers a choice</div>
+				  <div class="order_card__product_name"></div>
+				  <div class="order_card__product_description_blurb">Choose between our prefabricated products or submit a design to your own liking
+				  </div>
+			
+				  <div class="order_card__product_details order_card__product_details--item clearfix">
+					<div class="one-third">
+					  <div class="stat">Quality!</div>
+					  <div class="product_text">Happy Fabricated&copy; customer </div>
+					</div>
+			
+					<div class="one-third">
+					  <div class="stat">So easy!
+					  </div>
+					  <div class="product_text">Happy Fabricated&copy; customer</div>
+					</div>
+			
+					<div class="one-third">
+					  <div class="stat">Recycled!</div>
+					  <div class="product_text">Happy Fabricated&copy; customer</div>
+					</div>
+			
+				  </div>
+			
+				</div> 
+			  </div>
 
 			<div class="finance_banner">
 				<picture>
@@ -208,8 +240,11 @@
 			</div>
 
 		</footer>
-
-		<script src="critical-scripts.js"></script>
+		<script type="text/javascript" src="../assessment-3-usc-rdh006/js/file.js"></script>
+		
+		    <script>
+			autocomplete(document.getElementById("myInput"), countries);
+			</script> 
 	</body>
 	
 </html>

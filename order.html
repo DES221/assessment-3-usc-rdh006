@@ -79,15 +79,17 @@
 				
 			</div>
 			 <!--The search bar--> 
+			 <form autocomplete="off" action="/action_page.php"></form>
 			 <div class="wrap_bar">
+				
 				<div class="search">
-				   <input type="text" class="searchTerm" placeholder="Search Products">
-				   
-				   <button type="submit" class="searchButton">
-					 <i class="fa fa-search"></i>
-				  </button>
+					<div class="autocomplete" style="width:inherit;">
+						<input id= 'myInput' type="text" class="searchTerm" placeholder="Search Products">
+						
 				</div>
 			</div>
+			</div>
+		</form>
 
 
 			
@@ -344,6 +346,10 @@
 					</div> 
 				  </div>
 				
+				  
+				  
+
+
 					<div class="finance_banner">
 						<picture>
 							<source media="(max-width: 400px)" srcset="../assessment-3-usc-rdh006/images/finance_options_banner_mobile.jpg">

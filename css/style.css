@@ -666,7 +666,7 @@ a{
   .search {
     margin-top: 20px;
     width: 100%;
-    
+    margin-left: -3%;
     position: relative;
     display: flex;
   }
@@ -674,23 +674,23 @@ a{
   
   .searchTerm {
     width: 100%;
-    border: 3px solid #00B4CC;
-    border-right: none;
+    border: 3px solid #BC986A;
+    
     padding: 5px;
     height: 36px;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: #9DBFAF;
+    color: #BC986A;
   }
   
   .searchTerm:focus{
-    color: #00B4CC;
+    color: #BC986A;
   }
   
   .searchButton {
     width: 40px;
     height: 35x;
-    border: 1px solid #00B4CC;
+    border: 1px solid #BC986A;
     background: #00B4CC;
     text-align: center;
     color: #fff;
@@ -816,7 +816,7 @@ h3{
 }
 .fabrications_footer .fabrications_footer_contact i{
 	background-color:  #fff;
-	color: #8D8741;
+	color: #BC986A;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -902,7 +902,7 @@ h3{
 	background-color:  #fff;
 	border-radius: 2px;
 	font-size: 20px;
-	color: #8D8741;
+	color: #BC986A;
 	text-align: center;
 	line-height: 35px;
 	margin-right: 3px;
@@ -956,7 +956,7 @@ h3{
 @media (max-width: 400px) {
 	.shop {
     width: 370px;
-    margin-bottom: -80%;
+    margin-bottom: -110%;
     
 	}
 	
@@ -1054,7 +1054,55 @@ display: block;
   margin-top: -8%;
   
 }
+.wrapper_blurb {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 22.5%;
+  margin-top: 5%;
+  margin-bottom: -20%;
+  
+  
+}
+.order_card__product_description_blurb {
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: inkfree;
+  color: #fff;
+  font-weight: 800;  
+}
+@media screen and (max-width: 400px){
+  .wrapper_blurb {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 0%;
+    height: 50%;
+    margin-top: 30%;
+  }
+  
+  .order_card__product_description_blurb {
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: inkfree;
+    color: #fff;
+    font-weight: 800;  
+  }
+  
+  .order_card {
+    background: #BC986A;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+    
+  }
 
+}
 
 
 .order_card {
@@ -1074,7 +1122,7 @@ display: block;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: 0%;
-    
+    margin-bottom: 20%;
     
   }
   
@@ -1092,6 +1140,7 @@ display: block;
     z-index: 9999;
     margin-top: -35%;
   }
+  
 
 }
 
@@ -1177,6 +1226,42 @@ display: block;
 }
 
 
+.wrapper_blurb_custom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 24%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  
+  
+}
+
+
+@media screen and (max-width: 400px){
+  .wrapper_blurb_custom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: -1%;
+    
+    margin-top: 5%;
+  }
+  
+  
+  
+  .order_card {
+    background: #BC986A;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+    
+  }
+
+}
 
 /*---------------------------------------------------------------END ORDER PAGE---------------------------------------------------------------------------------------*/
 
@@ -1670,3 +1755,163 @@ margin-bottom: -40px;
   margin-left: 38%;
   width: auto;
 }
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style guide */
+
+.subheading{
+  margin-left: 41%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+.subheading1{
+  margin-left: 25%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: branboll;
+  color: #fff;
+}
+.subheading2{
+  margin-left: 25%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: goudy-stout;
+  color: #BC986A;
+}
+.subheading3{
+  margin-left: 25%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: inkfree;
+  color: #fff;
+}
+
+.circle{
+  border-radius: 50%;
+  margin-left: 42.2%;
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.circle_style{
+  border-radius: 50%;
+  margin-left: 10%;
+  height: 150px;
+  width: 150x;
+  display: inline-block;
+  position: relative;
+  
+  
+}
+.rotate_style {
+  animation: rotation 8s infinite linear;
+  animation-delay: 1s;
+}
+/* rotation animation with css for photo */
+.rotate {
+  animation: rotation 60s infinite linear;
+  animation-delay: 15s;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* original 3 box image container (column + row) OLD */
+.row {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #C3073F;
+    
+    
+  }
+.row_style {
+    display: flex;
+    justify-content: center;
+    margin-left: -2.5%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+  }
+  .column {
+    width: 450px;
+    flex: 33.33%;
+    padding: 5px;
+    justify-content: center;
+    margin: auto;
+  }
+  .column_style{
+    padding: 20px;
+    margin-left: 2%;
+  }
